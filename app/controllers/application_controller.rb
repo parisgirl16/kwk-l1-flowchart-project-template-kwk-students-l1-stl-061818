@@ -5,4 +5,7 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
+get '/' do
+  return erb :index
+end
 end
