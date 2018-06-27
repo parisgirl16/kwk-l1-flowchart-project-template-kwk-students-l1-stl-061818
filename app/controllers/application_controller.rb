@@ -1,3 +1,5 @@
+require "./config/environment"
+require "./app/models/question"
 class ApplicationController < Sinatra::Base
 
   configure do
@@ -6,6 +8,6 @@ class ApplicationController < Sinatra::Base
   end
 
 get '/' do
-  return html.erb :index
+  erb :index
 end
 end
