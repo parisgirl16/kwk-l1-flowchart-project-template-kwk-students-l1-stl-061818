@@ -6,6 +6,6 @@ class ApplicationController < Sinatra::Base
   end
 
 get '/' do
-  return erb :index
+  return html.erb :index
 end
 end
